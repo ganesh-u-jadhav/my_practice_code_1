@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+	int i,cnt=0,cnt1=0,n;
+	for(i=1;cnt1<100;i++)
+	{
+		cnt=0;
+		for(n=1;n<=i;n++)
+		{
+			if(i%n==0)
+				cnt++;
+		}
+		if(cnt==2)
+		{
+			printf("%d,",i);
+			cnt1++;
+		}
+	}
+printf("\n");
+}
